@@ -142,8 +142,12 @@ at `0xffffffff`.
 The default board is `zero`. You can build a different one using:
 
 ```
-make BOARD=metro_m0
+make BOARD=doppler
+xxd -i build/doppler/bootloader-doppler-v2.0.0-33-ge603fc3.bin > doppler_bootloader.h
 ```
+
+now you can use doppler_bootloader.h in https://github.com/noscene/Adafruit_DAP
+to flash Bootloader from any existing Board via SWD Lines
 
 If you're working on different board, it's best to create `Makefile.local`
 with say `BOARD=metro` to change the default.
