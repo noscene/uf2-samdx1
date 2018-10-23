@@ -1,4 +1,13 @@
-# UF2 Bootloader
+# UF2 Bootloader for doppler
+
+
+fork contains the bootloader for doppler samd51+ice40 FPGA board.
+this arduino example can run on most boards to flash it:
+https://github.com/noscene/Adafruit_DAP/tree/master/examples/DopplerBootLoaderByESP32
+more about doppler:
+https://github.com/noscene/doppler4arduino
+
+## UF2 Bootloader
 
 This repository contains a bootloader, derived from Atmel's SAM-BA,
 which in addition to the USB CDC (serial) protocol, also supports
