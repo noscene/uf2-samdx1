@@ -1,4 +1,13 @@
-# UF2 Bootloader
+# UF2 Bootloader for doppler
+
+
+fork contains the bootloader for doppler samd51+ice40 FPGA board.
+this arduino example can run on most boards to flash it:
+https://github.com/noscene/Adafruit_DAP/tree/master/examples/DopplerBootLoaderByESP32
+more about doppler:
+https://github.com/noscene/doppler4arduino
+
+## UF2 Bootloader
 
 This repository contains a bootloader, derived from Atmel's SAM-BA,
 which in addition to the USB CDC (serial) protocol, also supports
@@ -142,8 +151,12 @@ at `0xffffffff`.
 The default board is `zero`. You can build a different one using:
 
 ```
-make BOARD=metro_m0
+make BOARD=doppler
+xxd -i build/doppler/bootloader-doppler-v2.0.0-33-ge603fc3.bin > doppler_bootloader.h
 ```
+
+now you can use doppler_bootloader.h in https://github.com/noscene/Adafruit_DAP
+to flash Bootloader from any existing Board via SWD Lines
 
 If you're working on different board, it's best to create `Makefile.local`
 with say `BOARD=metro` to change the default.
