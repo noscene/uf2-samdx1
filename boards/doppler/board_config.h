@@ -22,11 +22,11 @@
  *             -- I2C--                       --- SWD  ---   ----- Shared  -----      ---------------- FPGA Pins ------------------
  */
 
-#define VENDOR_NAME "Dadamachines"
-#define PRODUCT_NAME "Doppler"
+#define VENDOR_NAME "dadamachines"
+#define PRODUCT_NAME "doppler"
 #define VOLUME_LABEL "DOPPLER"
-#define INDEX_URL "http://zmors.de/doppler"
-#define BOARD_ID "SAMD51G19A-Doppler-v0"
+#define INDEX_URL "https://github.com/dadamachines/doppler/"
+#define BOARD_ID "SAMD51G19A-doppler-v0"
 
 #define USB_VID 0x16D0
 #define USB_PID 0x0E3B
