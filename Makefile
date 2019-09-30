@@ -1,4 +1,4 @@
-BOARD=zero
+BOARD=doppler
 -include Makefile.user
 include boards/$(BOARD)/board.mk
 CC=arm-none-eabi-gcc
