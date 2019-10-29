@@ -2,16 +2,16 @@
 #define BOARD_CONFIG_H
 
 
-#define VENDOR_NAME "S.N.D."
-#define PRODUCT_NAME "theMCore"
-#define VOLUME_LABEL "theMCore"
-#define INDEX_URL "http://s-n-d.com/themcore"
-#define BOARD_ID "SAMD51J20A-SNDCore--v0"
+#define VENDOR_NAME "IO-Instruments"
+#define PRODUCT_NAME "Himalia"
+#define VOLUME_LABEL "Himalia"
+#define INDEX_URL "http://https://io-instruments.de/himalia"
+#define BOARD_ID "SAMD51J20A-Himalia--v0"
 
 #define USB_VID 0x16D0
-#define USB_PID 0x0E4F
+#define USB_PID 0x0b4F
 
-#define LED_PIN PIN_PA11
+#define LED_PIN PIN_PA23
 
 #define BOOT_USART_MODULE                 SERCOM0
 #define BOOT_USART_MASK                   APBAMASK
